@@ -99,7 +99,6 @@ public class ChasingAI : MonoBehaviour
         // Move back to start position
         agent.SetDestination(startPosition);
         
-        // Check if we've reached the start position
         if (!agent.hasPath || agent.remainingDistance < stoppingDistance)
         {
             currentState = AIState.Idle;
